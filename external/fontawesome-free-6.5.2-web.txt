@@ -1,0 +1,1 @@
+LeeSaaR Theme uses fontawesome-free-6.5.2-web

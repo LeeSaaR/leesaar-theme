@@ -1,0 +1,353 @@
+/*FONTS*/
+@font-face {
+    font-family: 'Ubuntu-R';
+    src: url('./assets/fonts/woff2/Ubuntu-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ubuntu-B';
+    src: url('./assets/fonts/woff2/Ubuntu-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ubuntu-L';
+    src: url('./assets/fonts/woff2/Ubuntu-L.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ubuntu-C';
+    src: url('./assets/fonts/woff2/Ubuntu-C.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Th';
+    src: url('./assets/fonts/woff2/Ubuntu-Th.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SourceCodePro-R';
+    src: url('./assets/fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    font-family: 'Ubuntu-R';
+    background-color: var(--color-body);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADINGS */
+
+.page-title {
+    font-size: 200%;
+    font-weight: 600;
+    color: var(--color-header-title);
+    text-align: center;
+    margin: 0;
+    padding: 32px 0;
+    border-bottom: 2px dotted var(--color-paragraph);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu-R';
+    width: 100%;
+    margin-top: var(--mar-l);
+}
+
+h1 {
+    font-size: 180%;
+    color: var(--color-header-title);
+}
+
+h2 {
+    font-size: 150%;
+    color: var(--color-header-big);
+}
+
+h3 {
+    font-size: 140%;
+    color: var(--color-header-small);
+}
+
+h4 {
+    font-size: 130%;
+    color: var(--color-header-big);
+}
+
+h5 {
+    font-size: 115%;
+    color: var(--color-header-small);
+}
+
+h6 {
+    font-size: 100%;
+    color: var(--color-header-big);
+}
+
+/* WP IMAGE*/
+.wp-block-image {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-top: var(--mar-m);
+    padding-top: var(--mar-s);
+    padding-left: var(--mar-s);
+    padding-right: var(--mar-s);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wp-block-image {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-top: var(--mar-m);
+    padding-top: var(--mar-s);
+    padding-left: var(--mar-s);
+    padding-right: var(--mar-s);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-portrait {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wp-element-caption {
+    font-family: 'Ubuntu-Th';
+    color: var(--color-paragraph);
+    margin: 0;
+    padding: var(--mar-s) 0;
+}
+
+/* PARAGRAPHS */
+
+p {
+    font-family: 'Ubuntu-Th';
+    width: 100%;
+    font-size: 110%;
+    color: var(--color-paragraph);
+    margin-top: var(--mar-m);
+    text-align: justify;
+}
+
+p > a {
+    color: var(--in-text-link);
+    font-family: 'Ubuntu-R';
+}
+
+p > a:hover {
+    color: var(--in-text-link-hover);
+}
+
+p > code {
+    font-family: 'SourceCodePro-R', 'sans-serif';
+    font-weight: normal;
+    background-color: #e5e5ff;
+    color: #9d0ead;
+    font-weight: 400;
+    font-size: 80%;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* MAIN CONTAINER */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 8px;
+    width: calc(100% - 8px);
+}
+
+.content-container {
+    width: var(--content-width);
+}
+
+/* FEATURED IMAGE */
+
+.featured-image {
+    width: 100%;
+}
+
+.no-featured-image {
+    margin-top: var(--mar-s);
+}
+
+/* LINK STRUCTURE */
+.link-structure-container {
+    font-family: 'Ubuntu-L';
+    font-weight: 300;
+    margin-top: var(--mar-s);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+
+.link-structure-container > a {
+    font-size: var(--link-structure-font-size);
+    color: var(--link-structure-color);
+}
+
+.link-structure-container > a:hover {
+    color: var(--link-structure-color-hover);
+}
+
+.link-structure-container > .link-structure-seperator {
+    font-size: var(--link-structure-font-size);
+    color: var(--link-structure-seperator);
+}
+
+/* LISTS */
+.main-container ul, .main-container ol {
+    margin-bottom: var(--mar-l);
+    color: var(--color-paragraph);
+}
+
+.main-container ul > li, .main-container ol > li {
+    color: var(--color-paragraph);
+    margin-left: var(--mar-l);
+}
+
+.main-container ul > li {
+    list-style: disc;
+}
+.main-container ol > li {
+    list-style: decimal;
+}
+
+/* TABLE */
+
+.wp-block-list {
+    font-family: 'Ubuntu-Th';
+    color: var(--color-paragraph);
+}
+
+.wp-block-list li {
+    margin-top: 8px;
+    font-size:110%;
+}
+
+/* TABLE */
+
+.wp-block-table table{
+    font-family: 'Ubuntu-Th';
+    color: var(--color-paragraph);
+    border: 1px solid var(--color-paragraph);
+}
+
+.wp-block-table th,
+.wp-block-table td {
+  border: 1px solid var(--color-paragraph);
+}
+
+/* POST PAGINATION (PAGE BREAKS) */
+
+.page-links {
+    margin: var(--mar-xl) 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: calc(var(--mar-s) * 0.5);
+}
+
+.page-links-title {
+    height: 100%;
+    margin-right: var(--mar-l);
+    font-size: 120%;
+    font-weight: 600;
+    color: var(--color-page-numbers);
+}
+
+.post-page-numbers {
+    
+    width: min-content;
+    height: min-content;
+}
+
+.post-page-numbers span {
+    background-color: var(--color-body);
+    width: 32px;
+    height: 16px;
+    padding: 10px 0;
+    
+    font-family: 'Ubuntu-B';
+    font-size: 120%;
+    font-weight: 600;
+    text-align: center;
+    border: 3px solid var(--color-page-numbers);
+    color: var(--color-page-numbers);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-page-numbers span:hover {
+    border: 3px solid var(--color-main);
+    color: var(--color-main);
+}
+
+.post-page-numbers.current span {
+    background-color: var(--color-menu-item-bg-2);
+    width: 32px;
+    height: 16px;
+    font-size: 120%;
+    text-align: center;
+    border: 3px solid var(--color-menu-item-bg-2);
+    color: var(--color-menu-item-hover);
+    pointer-events: none;
+}
+
+/* PAGE START BUTTON*/
+
+.button-page-start-container {
+    margin: var(--mar-m) 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-page-start {
+    border: 4px solid var(--color-main);
+    color: var(--color-main);
+    font-size: 110%;
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-page-start:hover {
+    border: 4px solid var(--color-menu-item-bg-2);
+    color: var(--color-menu-item-bg-2);
+}

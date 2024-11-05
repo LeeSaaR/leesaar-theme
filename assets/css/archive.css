@@ -1,0 +1,192 @@
+/* ARCHIVE SECTION*/
+
+.archive-title-container {
+    width: 100%;
+}
+
+.archive-title, .search-title {
+    font-size: 200%;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 32px 0;
+    color: var(--color-header-title);
+    border-bottom: 2px dotted var(--color-paragraph);
+}
+
+.search-title {
+    text-align: left;
+}
+
+.archive-container {
+    width: 100%;
+    margin: var(--mar-xl) 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    border-top: 2px dotted #a0a0a0;
+}
+
+.archive-container-no-border-top {
+    margin: var(--mar-m) 0;
+    border-top: none;
+}
+
+.archive-post-container {
+    height: 300px;
+    width: 100%;
+    margin: 0 20px;
+    margin-top: var(--mar-xl);
+    background-color: white;
+    background-color: var(--color-card-container);
+    box-shadow: 4px 6px 16px 4px var(--color-box-shadow);
+    border-radius: var(--archive-post-border-radius);
+    animation: postJumpOn 150ms linear forwards;
+}
+
+.archive-post-container:hover {
+    animation: postJumpOff 150ms linear forwards;
+}
+
+@keyframes postJumpOn {
+    0%   {transform: translateY(-10px);}
+    100% {transform: translateY(  0px);}
+}
+
+@keyframes postJumpOff {
+    0%   {transform: translateY(  0px);}
+    100% {transform: translateY(-10px);}
+}
+
+@media (max-width: 780px) {
+    .archive-container {
+        width: 100%;
+        margin: var(--mar-xl) 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--mar-l);
+    }
+
+    .archive-post-container {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.post-link {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--archive-post-border-radius);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    overflow: hidden;
+}
+
+.post-thumb {
+    width: 100%;
+    border-top-left-radius: var(--archive-post-border-radius);
+    border-top-right-radius: var(--archive-post-border-radius);
+}
+
+.post-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-name h2 {
+    width: 100%;
+    margin: 0;
+    padding: var(--mar-s) var(--mar-s);
+    padding-bottom: 0px;
+    font-size: 90%;
+    text-align: left;
+    font-family: 'Ubuntu-R';
+    color: var(--color-header-big);
+}
+
+.post-excerpt {
+    height: 100%;
+    width: 100%;
+    padding: var(--mar-s);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.post-excerpt > p {
+    width: 100%;
+    margin: 0;
+    padding: 0 var(--mar-s);
+    color: var(--color-paragraph);
+    font-size: 90%;
+    border-bottom-left-radius: var(--archive-post-border-radius);
+    border-bottom-right-radius: var(--archive-post-border-radius);
+    text-align: justify;
+}
+
+.post-category {
+    width: 100%;
+    padding: 0 var(--mar-s);
+    padding-top: 4px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post-category span {
+    font-family: 'Ubuntu-R';
+    padding-left: 8px;
+    font-size: 70%;
+    color: var(--color-header-small);
+}
+
+
+/* ARCHIVE PAGINATION */
+
+.pagination-container {
+    
+    width: 100%;
+    margin: var(--mar-xl) 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.page-numbers {
+    background-color: var(--color-body);
+    border: 3px solid var(--color-page-numbers);
+    width: 32px;
+    height: 16px;
+    padding: 10px 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Ubuntu-B';
+    font-size: 110%;
+    font-weight: 600;
+    color: var(--color-page-numbers);
+}
+
+.page-numbers:hover {
+    border: 3px solid var(--color-main);
+    color: var(--color-main);;
+}
+
+.page-numbers.current {
+    background-color: var(--color-menu-item-bg-2);
+    border: 3px solid var(--color-menu-item-bg-2);
+    color: var(--color-menu-item-hover);
+}

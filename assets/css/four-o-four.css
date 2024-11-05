@@ -1,0 +1,37 @@
+/* 404 Page */
+
+.four-o-four-container {
+    margin: 64px 0;
+    margin-bottom: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.four-o-four-container div {
+    margin: 0;
+    padding: 0;
+}
+
+.four-o-four-container h1 {
+    font-size: 800%;
+    color: var(--color-paragraph);
+}
+
+.four-o-four-container p {
+    font-size: 150%;
+    color: var(--color-paragraph);
+}
+
+.four-o-four-container a {
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+    color: var(--in-text-link);
+}
+
+.four-o-four-container a:hover {
+    color: var(--in-text-link-hover);
+}
